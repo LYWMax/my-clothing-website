@@ -2,6 +2,10 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  experimental: {
+    // This is to allow cross-origin requests in development.
+    allowedDevOrigins: ["**"],
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
