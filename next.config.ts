@@ -1,7 +1,11 @@
 import type {NextConfig} from 'next';
 
+const repoName = process.env.REPO_NAME || 'project-name';
+
 const nextConfig: NextConfig = {
   output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? `/${repoName}` : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '',
   /* config options here */
   experimental: {
     // This is to allow cross-origin requests in development.
