@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { useCart, type Product } from '@/hooks/use-cart';
 import { Button } from '@/components/ui/button';

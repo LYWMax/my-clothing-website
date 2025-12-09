@@ -7,7 +7,6 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 import { CartProvider } from '@/components/providers/cart-provider';
-import Chatbot from '@/components/chatbot/Chatbot';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -41,7 +40,6 @@ export default function RootLayout({
               <main className="flex-1">{children}</main>
               <Footer />
             </div>
-            <Chatbot />
             <Toaster />
           </CartProvider>
         </ThemeProvider>
