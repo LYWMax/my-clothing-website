@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A stylish man in a suit looking out a window in a modern high-rise building.",
+      "imageUrl": "https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwc3VpdHxlbnwwfHx8fDE3NjUyNDY3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man suit"
+    },
+    {
+      "id": "product-1",
+      "description": "A classic charcoal grey suit on a mannequin.",
+      "imageUrl": "https://images.unsplash.com/photo-1603583784718-beb30997cfa7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGFyY29hbCUyMHN1aXR8ZW58MHx8fHwxNzY1MjYxOTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "charcoal suit"
+    },
+    {
+      "id": "product-2",
+      "description": "A sharp navy blue suit with a crisp white shirt.",
+      "imageUrl": "https://images.unsplash.com/photo-1598496754824-7804d5ec4018?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxuYXZ5JTIwc3VpdHxlbnwwfHx8fDE3NjUyNjE5Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "navy suit"
+    },
+    {
+      "id": "product-3",
+      "description": "A timeless black tuxedo for formal events.",
+      "imageUrl": "https://images.unsplash.com/photo-1714667067401-88bda7f181e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxibGFjayUyMHR1eGVkb3xlbnwwfHx8fDE3NjUxOTQ4ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "black tuxedo"
+    },
+    {
+      "id": "product-4",
+      "description": "A light grey linen suit, perfect for summer occasions.",
+      "imageUrl": "https://images.unsplash.com/photo-1730892764785-07944aed3396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JleSUyMHN1aXR8ZW58MHx8fHwxNzY1MjYxOTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grey suit"
+    }
+  ]
 }

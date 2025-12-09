@@ -1,0 +1,233 @@
+diff --git a/node_modules/next-themes/dist/index.js b/node_modules/next-themes/dist/index.js
+index 987825d..36db978 100644
+--- a/node_modules/next-themes/dist/index.js
++++ b/node_modules/next-themes/dist/index.js
+@@ -1,6 +1,6 @@
+ 'use client';
+ var __create = Object.create;
+-var __defProp = Object.defineProperty;
++var __defProp = Object.defineProperty; 
+ var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+ var __getOwnPropNames = Object.getOwnPropertyNames;
+ var __getProtoOf = Object.getPrototypeOf;
+@@ -10,13 +10,13 @@
+     for (var r in e) __defProp(t, r, { get: e[r], enumerable: !0 });
+   },
+   s = (e, t, r, o) => {
+-    if ((t && typeof t == 'object') || typeof t == 'function')
++    if (t && typeof t == 'object' || typeof t == 'function')
+       for (let n of __getOwnPropNames(t))
+         !__hasOwnProp.call(e, n) &&
+           n !== r &&
+           __defProp(e, n, { get: () => t[n], enumerable: !(o = __getOwnPropDesc(t, n)) || o.enumerable });
+     return e;
+-  },
++  }, 
+   i = (e, t, r) => (
+     (r = e != null ? __create(__getProtoOf(e)) : {}),
+     s(t || !e || !e.__esModule ? __defProp(r, 'default', { value: e, enumerable: !0 }) : r, e)
+@@ -28,7 +28,7 @@
+ var y = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports);
+ var O = y((le, a) => {
+   'use strict';
+-  var p = i(d()),
++  var p = i(d()), 
+     c;
+   'use client';
+   (function (e) {
+@@ -37,7 +37,7 @@
+     var m = {}.hasOwnProperty;
+     function w() {
+       for (var o = [], n = 0; n < arguments.length; n++) {
+-        var f = arguments[n];
++        var f = arguments[n]; 
+         if (f) {
+           var l = typeof f;
+           if (l === 'string' || l === 'number') o.push(f);
+@@ -48,7 +48,7 @@
+         }
+       }
+       var g = '';
+-      for (n = 0; n < o.length; n++) n > 0 && (g += ' '), (g += o[n]);
++      for (n = 0; n < o.length; n++) n > 0 && (g += ' '), (g += o[n]); 
+       return g;
+     }
+     e.exports = w;
+@@ -58,9 +58,9 @@
+   var u,
+     h,
+     m = (c = p.default.useSyncExternalStore) !== null && c !== void 0 ? c : M,
+-    v = ['light', 'dark'],
++    v = ['light', 'dark'], 
+     P = '(prefers-color-scheme: dark)',
+-    C = typeof window > 'u',
++    C = typeof window > 'u', 
+     x = /* @__PURE__ */ new Map(),
+     j = (e, t) => {
+       x.has(e) || x.set(e, /* @__PURE__ */ new Set());
+@@ -73,7 +73,7 @@
+         o(f);
+       });
+     },
+-    E = (e) => {
++    E = e => {
+       if (x.has(e)) for (let t of x.get(e)) t();
+     },
+     T = 'theme',
+@@ -95,7 +95,7 @@
+       e.preventDefault();
+     },
+     _ = 'data-new-gr-c-s-check-loaded',
+-    N = () => {
++    N = () => { 
+       var e;
+       return (e = document.documentElement.getAttribute(_)) == null ? void 0 : e.toString();
+     },
+@@ -107,11 +107,11 @@
+           });
+       };
+       return b(n), b(f), () => (document.removeEventListener('storage', n), document.removeEventListener('visibilitychange', f));
+-    },
++    }, 
+     A = (e) => {
+       let { storageKey: t, forcedTheme: r } = e;
+       return m(
+-        D,
++        D, 
+         () => k(t, r),
+         () => k(t, r)
+       );
+@@ -128,7 +128,7 @@
+       return (r = (n) => {
+         let o = S(n).matches;
+         return o ? 'dark' : 'light';
+-      }),
++      }), 
+       (l = r(t)),
+       j(t, (n) => {
+         let o = r(t);
+@@ -137,13 +137,13 @@
+           e(o);
+         }
+       }),
+-      l
++      l 
+     ),
+     U = (e, t) => {
+       let r = k(e);
+       if (r) return r;
+       if (t) return t;
+-      if (C) return 'light';
++      if (C) return 'light'; 
+       let o = S(P);
+       return r || (o.matches ? 'dark' : 'light');
+     },
+@@ -171,7 +171,7 @@
+         (t === 'system' && e.systemTheme) || t
+       );
+     },
+-    I = () => {
++    I = () => { 
+       let e = m(L),
+         t = p.default.useCallback(() => {
+           let r = k(T);
+@@ -183,11 +183,11 @@
+         [t, e]
+       );
+     },
+-    H = (e) => {
++    H = e => {
+       let {
+           forcedTheme: t,
+           disableTransitionOnChange: r = !1,
+-          enableSystem: o = !0,
++          enableSystem: o = !0, 
+           enableColorScheme: n = !0,
+           storageKey: f = 'theme',
+           themes: l = v,
+@@ -195,14 +195,14 @@
+           value: g,
+           children: b,
+           nonce: w,
+-        } = e,
++        } = e, 
+         S = p.default.useContext(q),
+         D = S.resolvedTheme,
+         M = A({ storageKey: f, forcedTheme: t }),
+         L =
+           t ||
+           (g ? Object.values(g)[0] : M) ||
+-          (S.resolvedTheme && S.themes.includes(S.resolvedTheme) ? S.resolvedTheme : void 0),
++          (S.resolvedTheme && S.themes.includes(S.resolvedTheme) ? S.resolvedTheme : void 0), 
+         [R, z] = p.default.useState(L),
+         [F, B] = p.default.useState(() => U(f, g ? void 0 : d)),
+         G = o ? B : void 0;
+@@ -231,10 +231,10 @@
+       n &&
+         !C &&
+         V(
+-          l,
+-          o ? S.systemTheme : void 0,
++          l, 
++          o ? S.systemTheme : void 0, 
+           n
+-        ),
++        ), 
+         [e]
+       );
+       let X = p.default.useMemo(
+@@ -248,15 +248,15 @@
+           [...l, 'system'],
+           setTheme: Y,
+           forcedTheme: t,
+-          resolvedTheme: e,
+-        }),
++          resolvedTheme: e, 
++        }), 
+         [Y, l, t, e]
+       );
+       return p.default.createElement(q.Provider, { value: X }, p.default.createElement(Q, { forcedTheme: t, storageKey: f }, b));
+     },
+-    K = () => p.default.useContext(q),
++    K = () => p.default.useContext(q), 
+     Q = p.default.memo(
+-      ({ forcedTheme: e, storageKey: t, children: r }) => (
++      ({ forcedTheme: e, storageKey: t, children: r }) =>
+         p.default.createElement(
+           'script',
+           {
+@@ -275,10 +275,10 @@
+                 : 'system',
+             systemTheme: a.matches ? 'dark' : 'light',
+           };
+-        })()`,
++        })()`, 
+           }
+         ),
+-        r
++        r 
+       )
+     ),
+     Z = () => null,
+diff --git a/node_modules/next-themes/package.json b/node_modules/next-themes/package.json
+index c47ac48..b28f731 100644
+--- a/node_modules/next-themes/package.json
++++ b/node_modules/next-themes/package.json
+@@ -37,13 +37,13 @@
+     "access": "public"
+   },
+   "peerDependencies": {
+-    "react": "^16.8 || ^17 || ^18",
+-    "react-dom": "^16.8 || ^17 || ^18"
++    "react": "^16.8 || ^17 || ^18 || ^19",
++    "react-dom": "^16.8 || ^17 || ^18 || ^19"
+   },
+   "peerDependenciesMeta": {
+     "react-dom": {
+       "optional": true
+-    }
++    } 
+   },
+   "devDependencies": {
+     "@testing-library/jest-dom": "^5.16.5",
+
